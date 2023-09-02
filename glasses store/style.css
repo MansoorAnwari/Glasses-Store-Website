@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Vazir;
+}
+
+:root {
+    --swiper-theme-color: #fff;
+}
+
+.container {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.section-brand-name {
+    object-fit: cover;
+    width: 25rem;
+    /* padding-left: 10rem; */
+}
+
+.dot {
+    position: relative;
+    bottom: 1rem;
+    right: 0.8rem;
+}
+
+.section-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.section-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.section-links a {
+    text-decoration: none;
+    color: rgba(24, 24, 24, 1);
+}
+
+/* search input style */
+.search-input {
+    padding: 0 3rem 0 0.5rem;
+    width: 228px;
+    height: 55px;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+::placeholder {
+    color: rgba(102, 102, 102, 1);
+}
+
+.search-icon {
+    position: relative;
+    right: 2.5rem;
+    cursor: inherit;
+    bottom: 1px;
+}
+
+/* .shopping-icon style  */
+.background-shopping-icon {
+    background-color: rgba(242, 242, 242, 1);
+    width: 55px;
+    height: 55px;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* swipper slider code  */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+
+}
+
+.blur-swipper:nth-child(image) {
+    background: url(asset/images/blur.png);
+    position: relative;
+}
+
+.img-position {
+    /* position: relative; */
+    object-fit: cover;
+
+}
+
+.glass {
+    width: 464px;
+    height: 203px;
+    position: absolute;
+    /* z-index: 0; */
+    object-fit: cover;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* <!-- berands part started  --> */
+.brand-part-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.logo-brand-part-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 4rem;
+    width: 100%;
+}
+
+.logo-brand-part-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 4rem;
+    width: 100%;
+}
+
+.img-logo {
+    border: 3px solid #F2F2F2;
+    border-radius: 10rem;
+    width: 17rem;
+    height: 17rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.blur {
+    position: relative;
+    bottom: 8rem;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(6.9px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    width: 317px;
+    height: 130px;
+}
+
+.img-part {
+    object-fit: cover;
+}
+
+.part-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.swiper-pagination {
+    color: var(--swiper-theme-color) !important;
+}
+
+/* swipper2  */
+.slide-container {
+    max-width: 90%;
+    width: 100%;
+    padding: 40px 0;
+    border: 1px solid#B3B3B3;
+    border-radius: 10px;
+    height: 33rem;
+}
+
+.slide-content {
+    margin: 0 40px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: #FFF;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.brand-part-name2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 3rem;
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-content: start;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.price-star {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100%;
+    font-size: 13px;
+}
+
+/* .swiper-navBtn {
+    color: #000000;
+    transition: color 0.3s ease;
+
+} */
+
+.bx-chevron-left,
+.bx-chevron-right {
+    /* position: absolute; */
+    border: 1px solid #B3B3B3;
+    border-radius: 2px;
+    width: 1.5rem;
+    height: 2.5rem;
+
+}
+
+.box1 i {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bx-chevron-right {
+    right: 0;
+}
+
+.bx-chevron-left {
+    left: 0;
+}
+
+/* .swiper-pagination-bullet {
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ffffff;
+} */
+
+@media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+
+    /* .swiper-navBtn {
+        display: none;
+    } */
+}
+
+/* imag share start */
+.share {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.img-share-design {
+    width: 100%;
+}
+
+
+.btn-div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 9rem;
+}
+
+.btn-buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #619257;
+    border: none;
+    color: #fff;
+    width: 181px;
+    height: 55px;
+    border-radius: 8px;
+}
+
+/* <!-- circle img and text part  --> */
+.texts {
+    text-align: justify;
+    width: 35rem;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem 5rem 10rem;
+}
+
+.btn-buy-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #619257;
+    border: none;
+    color: #fff;
+    width: 181px;
+    height: 55px;
+    border-radius: 8px;
+}
+
+
+
+
+
+/* footer  */
+.bg-color {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+.first-part {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 2rem;
+    text-align: start;
+}
+
+.brand-sefid {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+}
+
+.logo-link {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.number {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+}
+
+.all-link-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 8rem;
+}
+
+.secound-part {
+    color: #fff;
+    font-size: 20px;
+}
+
+.first {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+.first a {
+    display: flex;
+    color: #9999;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.secound {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+.secound a {
+    display: flex;
+    color: #9999;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.third {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+.third a {
+    display: flex;
+    color: #9999;
+    text-decoration: none;
+    font-size: 15px;
+}
