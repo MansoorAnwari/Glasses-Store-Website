@@ -21,7 +21,6 @@
 .section-brand-name {
     object-fit: cover;
     width: 25rem;
-    /* padding-left: 10rem; */
 }
 
 .dot {
@@ -96,7 +95,6 @@
 }
 
 .img-position {
-    /* position: relative; */
     object-fit: cover;
 
 }
@@ -151,6 +149,48 @@
     width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+
+    .logo-brand-part-1,
+    .logo-brand-part-2 {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1400px) {
+
+
+    .responsive-img {
+        display: block;
+        width: 70%;
+    }
+
+    #r {
+
+        right: 88% !important;
+    }
+
+    #l {
+
+        right: 86% !important;
+    }
+
+    .img-logo {
+        border-radius: 77%;
+        width: 10rem !important;
+        height: 10rem !important;
+    }
+
+    .logo-brand-part-1,
+    .logo-brand-part-2 {
+        width: 100%;
+        gap: 2rem !important;
+    }
+
+}
+
+/* img blur  */
 .img-logo {
     border: 3px solid #F2F2F2;
     border-radius: 10rem;
@@ -200,6 +240,25 @@
 
 .swiper-pagination {
     color: var(--swiper-theme-color) !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    .part-img-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1350px) {
+    .img-part {
+        width: 10rem;
+    }
+
+    .blur {
+        bottom: 5rem;
+        width: 160px;
+        height: 79px;
+    }
 }
 
 /* swipper2  */
@@ -269,12 +328,6 @@
     font-size: 13px;
 }
 
-/* .swiper-navBtn {
-    color: #000000;
-    transition: color 0.3s ease;
-
-} */
-
 .bx-chevron-left,
 .bx-chevron-right {
     /* position: absolute; */
@@ -300,23 +353,18 @@
     left: 0;
 }
 
-/* .swiper-pagination-bullet {
-    background-color: #ffffff;
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #ffffff;
-} */
-
 @media screen and (max-width: 768px) {
     .slide-content {
         margin: 0 10px;
     }
 
-    /* .swiper-navBtn {
+    .slide-container {
+        height: 30rem;
+    }
+
+    .box1 {
         display: none;
-    } */
+    }
 }
 
 /* imag share start */
@@ -355,6 +403,38 @@
     border-radius: 8px;
 }
 
+@media screen and (max-width: 768px) {
+    .btn-buy {
+        width: 120px;
+        height: 35px;
+
+    }
+
+    .btn-buy-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .brand-part-name2 {
+        justify-content: center;
+    }
+
+    .btn-div {
+        bottom: 2.5rem;
+    }
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width:1400px) {
+
+    .btn-div {
+        bottom: 5.5rem;
+    }
+}
+
 /* <!-- circle img and text part  --> */
 .texts {
     text-align: justify;
@@ -382,8 +462,36 @@
 }
 
 
+@media screen and (max-width:768px) {
+    .all {
+        flex-direction: column-reverse;
+    }
 
+    .texts {
+        max-width: 20rem;
+        margin-top: 3rem;
+    }
 
+    .res-img {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1400px) {
+    .all {
+        flex-direction: column-reverse;
+    }
+
+    .res-img {
+        width: 300px;
+    }
+
+    .texts {
+        max-width: 60rem !important;
+        margin-top: 3rem;
+    }
+
+}
 
 /* footer  */
 .bg-color {
@@ -483,4 +591,49 @@
     color: #9999;
     text-decoration: none;
     font-size: 15px;
+}
+
+@media screen and (max-width:768px) {
+    .all-link-footer {
+        flex-direction: column;
+    }
+
+    .brand-sefid,
+    .logo-link,
+    .number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first,
+    .second,
+    .third {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .all-link-footer {
+        gap: 5rem;
+    }
+
+    .first-part {
+        margin-top: 3rem;
+    }
+
+    .bg-color {
+        flex-direction: column;
+        height: 70rem !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .all-link-footer {
+        gap: 3rem;
+        width: 100%;
+    }
+
+    .bg-color {
+        gap: 1rem;
+    }
 }
